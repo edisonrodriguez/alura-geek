@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin-bottom: 5rem; /* Añadir margen inferior para evitar superposición con el footer */
+}
+
+.formulario {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 1rem;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centramos los elementos horizontalmente */
+    height: 400px; /* Altura fija para el formulario */
+    justify-content: space-between; /* Distribuye los elementos verticalmente */
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    width: 100%;  /* Asegura que los inputs ocupen el 100% del contenedor padre */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;  /* Asegura que los inputs ocupen el 100% del contenedor padre */
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    width: 100%;  /* Asegura que el botón ocupe el 100% del contenedor padre */
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;  /* Espacio hacia abajo del último input */
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.productos {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.productos-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye los elementos dentro de la tarjeta */
+    height: 92%; /* Asegura que todas las tarjetas tengan la misma altura */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+}
+
+.card .nombreProducto {
+    font-size: 1rem;
+    margin: 1rem 0;
+    height: 2.4rem; /* Altura fija para dos líneas de texto */
+    line-height: 1.2rem; /* Altura de línea para alinear el texto verticalmente */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.card .precioProducto {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.card .comprar {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center; /* Asegura que el botón esté centrado horizontalmente */
+}
+
+.card .comprar:hover {
+    background-color: #d32f2f;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem; /* Añadir margen superior para crear separación visual */
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .formulario {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}

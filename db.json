@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "id": "b312",
+      "nombre": "Productos de de tienda online",
+      "precio": "200",
+      "imagen": "https://media.istockphoto.com/id/1431192613/es/vector/conjunto-de-icono-de-compras-en-l%C3%ADnea-en-3d-concepto-de-negocios-y-env%C3%ADo-gratuito.jpg?s=1024x1024&w=is&k=20&c=ceFAEvDHICjpXbjm2zhjarMaQo-lq7IZPGvJUG81t3k="
+    },
+    {
+      "id": "dc6a",
+      "nombre": "productos Generales de la tienda",
+      "precio": "1000",
+      "imagen": "https://media.istockphoto.com/id/823252484/es/vector/cami%C3%B3n-de-reparto-de-alimentos.jpg?s=1024x1024&w=is&k=20&c=Oxydb7Yte3gQRbIl13vKbSDjQqYOiiFFNlBbFfuSX88="
+    },
+    {
+      "id": "6f13",
+      "nombre": "productos Generales de la tienda",
+      "precio": "1000",
+      "imagen": "https://media.istockphoto.com/id/823252484/es/vector/cami%C3%B3n-de-reparto-de-alimentos.jpg?s=1024x1024&w=is&k=20&c=Oxydb7Yte3gQRbIl13vKbSDjQqYOiiFFNlBbFfuSX88="
+    }
+  ]
+}
